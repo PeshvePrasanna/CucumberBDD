@@ -6,8 +6,8 @@ Feature: Login Feature
   Scenario: Log Into Account with valid credentials
     Given user navigates to AirAsia website
     And user clicks on login button
-    And user enters valid username
-    And user enters valid password
+    And user enters valid username 
+    And user enters valid password  
     When user clicks on the Login button
     Then user should be navigated to homepage
     
