@@ -1,0 +1,106 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 6,
+        "name": "Log Into Account with valid credentials",
+        "description": "",
+        "id": "login-feature;log-into-account-with-valid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 159238237,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user navigates to AirAsia website",
+            "match": {
+              "location": "LoginSteps.user_navigates_to_AirAsia_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6051,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user clicks on login button",
+            "match": {
+              "location": "LoginSteps.user_clicks_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 119157,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user enters valid username",
+            "match": {
+              "location": "LoginSteps.user_enters_valid_username()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 105659,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user enters valid password",
+            "match": {
+              "location": "LoginSteps.user_enters_valid_password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 297426,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user clicks on the Login button",
+            "match": {
+              "location": "LoginSteps.user_clicks_on_the_Login_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 81455,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user should be navigated to homepage",
+            "match": {
+              "location": "LoginSteps.user_should_be_navigated_to_homepage()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 5,
+            "name": "@tag1"
+          }
+        ]
+      }
+    ],
+    "name": "Login Feature",
+    "description": "existing users will be able to login into their account using valid credentials",
+    "id": "login-feature",
+    "keyword": "Feature",
+    "uri": "login.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@tag"
+      }
+    ]
+  }
+]
