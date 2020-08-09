@@ -12,6 +12,10 @@ formatter.feature({
     }
   ]
 });
+formatter.before({
+  "duration": 4007505929,
+  "status": "passed"
+});
 formatter.scenario({
   "line": 6,
   "name": "Log Into Account with valid credentials",
@@ -60,42 +64,42 @@ formatter.match({
   "location": "LoginSteps.user_navigates_to_AirAsia_website()"
 });
 formatter.result({
-  "duration": 159238237,
+  "duration": 4885829918,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.user_clicks_on_login_button()"
 });
 formatter.result({
-  "duration": 6051,
+  "duration": 160681147,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.user_enters_valid_username()"
 });
 formatter.result({
-  "duration": 119157,
+  "duration": 1014119580,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.user_enters_valid_password()"
 });
 formatter.result({
-  "duration": 105659,
+  "duration": 385798500,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.user_clicks_on_the_Login_button()"
 });
 formatter.result({
-  "duration": 297426,
+  "duration": 217630508,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.user_should_be_navigated_to_homepage()"
 });
 formatter.result({
-  "duration": 81455,
+  "duration": 5293935353,
   "status": "passed"
 });
 });

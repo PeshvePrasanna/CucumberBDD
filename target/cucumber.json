@@ -3,6 +3,17 @@
     "line": 2,
     "elements": [
       {
+        "before": [
+          {
+            "result": {
+              "duration": 4007505929,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginSteps.Setup()"
+            }
+          }
+        ],
         "line": 6,
         "name": "Log Into Account with valid credentials",
         "description": "",
@@ -12,7 +23,7 @@
         "steps": [
           {
             "result": {
-              "duration": 159238237,
+              "duration": 4885829918,
               "status": "passed"
             },
             "line": 7,
@@ -24,7 +35,7 @@
           },
           {
             "result": {
-              "duration": 6051,
+              "duration": 160681147,
               "status": "passed"
             },
             "line": 8,
@@ -36,7 +47,7 @@
           },
           {
             "result": {
-              "duration": 119157,
+              "duration": 1014119580,
               "status": "passed"
             },
             "line": 9,
@@ -48,7 +59,7 @@
           },
           {
             "result": {
-              "duration": 105659,
+              "duration": 385798500,
               "status": "passed"
             },
             "line": 10,
@@ -60,7 +71,7 @@
           },
           {
             "result": {
-              "duration": 297426,
+              "duration": 217630508,
               "status": "passed"
             },
             "line": 11,
@@ -72,7 +83,7 @@
           },
           {
             "result": {
-              "duration": 81455,
+              "duration": 5293935353,
               "status": "passed"
             },
             "line": 12,
