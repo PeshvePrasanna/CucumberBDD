@@ -1,5 +1,6 @@
 package cucumberFramework.steps;
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.junit.Assert;
@@ -8,6 +9,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import cucumber.api.DataTable;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -39,16 +41,23 @@ public class LoginSteps {
 		driver.findElement(By.xpath("//span[@id='loginModal']")).click();
 	}
 
-	@Given("^user enters valid username$")
-	public void user_enters_valid_username() throws Throwable {
-		System.out.println("user_enters_valid_username");
-		driver.findElement(By.cssSelector("#sso-login-email-input")).sendKeys("prasannamp@hotmail.com");
-	}
-
-	@Given("^user enters valid password$")
-	public void user_enters_valid_password() throws Throwable {
-		System.out.println("user_enters_valid_password");
-		driver.findElement(By.xpath("//input[@id='sso-login-password-input']")).sendKeys("Today@100$");
+//	@Given("^user enters valid username$")
+//	public void user_enters_valid_username() throws Throwable {
+//		System.out.println("user_enters_valid_username");
+//		driver.findElement(By.cssSelector("#sso-login-email-input")).sendKeys("prasannamp@hotmail.com");
+//	}
+//
+//	@Given("^user enters valid password$")
+//	public void user_enters_valid_password() throws Throwable {
+//		System.out.println("user_enters_valid_password");
+//		driver.findElement(By.xpath("//input[@id='sso-login-password-input']")).sendKeys("Today@100$");
+	//}
+	@Given("^user enters valid username and password$")
+	public void user_enters_valid_username_and_password(DataTable arg1) throws Throwable {
+		List<List<String>> data = arg1.raw();
+		driver.findElement(By.cssSelector("#sso-login-email-input")).sendKeys(data.get(0).get(0));
+		driver.findElement(By.xpath("//input[@id='sso-login-password-input']")).sendKeys(data.get(0).get(1));
+	    
 	}
 
 	@When("^user clicks on the Login button$")
@@ -62,15 +71,12 @@ public class LoginSteps {
 	public void user_should_be_navigated_to_homepage() throws Throwable {
 		System.out.println("user_should_be_navigated_to_homepage");
 		Thread.sleep(3000);
-		String MyUser = "Prasanna";
-		String usernameText = driver.findElement(By.xpath("//span[@id='loginModal']")).getText();
-		System.out.println(usernameText);
-		if(usernameText.equals(MyUser)){
+		String expectedTitle = "Book Cheap Flights, Hotels & Activities Online | AirAsia";
+		String actualTitle = driver.getTitle();
+		if(actualTitle.equals(expectedTitle)){
 			System.out.println("Login Successful");
 		}else{
 			System.out.println("Login Unsuccessful");
 		}
-		
-		
 	}
 }

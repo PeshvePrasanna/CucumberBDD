@@ -13,7 +13,7 @@ formatter.feature({
   ]
 });
 formatter.before({
-  "duration": 4007505929,
+  "duration": 4100720758,
   "status": "passed"
 });
 formatter.scenario({
@@ -42,12 +42,16 @@ formatter.step({
 });
 formatter.step({
   "line": 9,
-  "name": "user enters valid username",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 10,
-  "name": "user enters valid password",
+  "name": "user enters valid username and password",
+  "rows": [
+    {
+      "cells": [
+        "prasannamp@hotmail.com",
+        "Today@100$"
+      ],
+      "line": 10
+    }
+  ],
   "keyword": "And "
 });
 formatter.step({
@@ -64,42 +68,35 @@ formatter.match({
   "location": "LoginSteps.user_navigates_to_AirAsia_website()"
 });
 formatter.result({
-  "duration": 4885829918,
+  "duration": 7048607475,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.user_clicks_on_login_button()"
 });
 formatter.result({
-  "duration": 160681147,
+  "duration": 143137680,
   "status": "passed"
 });
 formatter.match({
-  "location": "LoginSteps.user_enters_valid_username()"
+  "location": "LoginSteps.user_enters_valid_username_and_password(DataTable)"
 });
 formatter.result({
-  "duration": 1014119580,
-  "status": "passed"
-});
-formatter.match({
-  "location": "LoginSteps.user_enters_valid_password()"
-});
-formatter.result({
-  "duration": 385798500,
+  "duration": 1314932963,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.user_clicks_on_the_Login_button()"
 });
 formatter.result({
-  "duration": 217630508,
+  "duration": 201886490,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.user_should_be_navigated_to_homepage()"
 });
 formatter.result({
-  "duration": 5293935353,
+  "duration": 7334069218,
   "status": "passed"
 });
 });
