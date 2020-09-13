@@ -10,5 +10,12 @@ Feature: Login Feature
      |prasannamp@hotmail.com|Today@100$|
     When user clicks on the Login button
     Then user should be navigated to homepage
-    
+    Then user clicks on Flight Tab
+    And selects From as Bengaluru
+    And selects to as Pune
+    Then selects as one way trip
+    And selects date as 31 August
+    And user clicks on Confirm button
+    And user clicks on Search Flight button
+    Then user should be navigated to Flight results page 
     
