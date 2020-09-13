@@ -99,7 +99,7 @@ public class LoginSteps {
 		driver.findElement(By.xpath("//*[@class='css-11aywtz r-141fyjm r-1m5ju6n r-1b43r93 r-majxgm r-1d7gupr r-1ny4l3l r-buy8e9 r-1j3t67a r-1jr0yug r-bnwqim'][@aria-label='To  edit  required  has auto complete']")).sendKeys("Pune");
 		driver.findElement(By.xpath("//div[contains(text(),'From')]")).sendKeys(Keys.ARROW_DOWN);
 		driver.findElement(By.xpath("//div[contains(text(),'From')]")).sendKeys(Keys.ENTER);
-		System.out.println("To : Pune");
+		System.out.println("To : As  pUne");
 	}
 
 	@Then("^selects as one way trip$")
